@@ -23,13 +23,21 @@
  * Change "nord" to whatever theme you set on <html>.
  */
 [data-theme='nord'] {
- --color-primary: #ffe5ec;
- --color-accent: #ff90b3;
- --color-green:#eaf2d7;
- --color-lavender:#dcccff; 
+ --color-primary:#FFAFCA; 
+ --color-accent: #E17FF9;
+ --color-blue:#31EAE4;
+ --color-yellow: #FAE416; 
 }
 
+.hero {
+  background-image: url("https://static.vecteezy.com/system/resources/thumbnails/038/942/428/small_2x/ai-generated-a-scoop-of-ice-cream-with-sprinkles-and-confetti-photo.jpeg");
+}
 
+.hero h1 {
+  text-shadow: 2px 2px 5px palevioletred;
+  font-size: 95px;
+  color: (white)
+}
 
 /* TYPE
  *
