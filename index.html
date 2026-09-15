@@ -6,83 +6,80 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>My Hot Take</title>
 
-  <!--
-      THE THREE TAGS. Tailwind and daisyUI, no build step, nothing installed.
-      Open this file with Live Server and start working.
 
-      Two honest notes:
-        1. The last tag is Tailwind's BROWSER build. Tailwind's own docs say it
-           is "designed for development purposes only, and is not intended for
-           production." That is fine for now. Unit 8 replaces it with a real
-           built stylesheet, because publishing to a public address is where
-           "development only" stops being acceptable.
-        2. These load from jsdelivr, which means jsdelivr sees a request from
-           every reader of your site. That is your call to make on your own
-           project. Read Unit 8's "what a page costs its reader" before you
-           decide it does not matter.
-    -->
+  -->
   <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
   <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
-  <!-- Your own rules go last, so they win. See styles.css. -->
+
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body class="bg-base-100 text-base-content">
-  <div class="hero min-h-screen"> 
+  <div class="hero min-h-screen">
     <div class="hero-overlay"></div>
     <div class="hero-content text-neutral-content text-center">
       <div class="max-w-xl">
         <h1 class="mb-5 text-5xl font-bold">Ice cream is better with sprinkles</h1>
         <p class="mb-5">
-          When eating ice cream, it tastes better with sprinkles rather than by itself. 
+          When eating ice cream, it tastes better with sprinkles rather than by itself.
         </p>
         <button class="btn btn-primary">Get Started</button>
       </div>
     </div>
   </div>
-  <div class="container">
-    <div class="row columns-3">
-  
+ <!-- FEATURE BREAKOUT -->
+  <div class="max-w-5xl mx-auto my-10">
+    <div class="grid gap-6 grid-cols-1 md:grid-cols-3">
+
+      <!-- CARD 1 -->
+      <div class="card bg-base-100 shadow-sm">
+        <figure class="px-10 pt-10">
+          <img src="https://img.magnific.com/premium-photo/close-up-colorful-sprinkles-pink-background_1115749-18168.jpg" alt="Shoes"
+            class="rounded-xl" />
+        </figure>
+        <div class="card-body items-center text-center">
+          <h2 class="card-title">Crunchy Texture</h2>
+          <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+          <div class="card-actions">
+            <button class="btn btn-primary">Buy Now</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="card bg-base-100 shadow-sm">
+        <figure class="px-10 pt-10">
+          <img src="https://static.vecteezy.com/system/resources/thumbnails/043/166/290/small_2x/ai-generated-a-colorful-rainbow-sprinkle-topping-on-ice-cream-generative-ai-photo.jpeg" alt="Shoes"
+            class="rounded-xl" />
+        </figure>
+        <div class="card-body items-center text-center">
+          <h2 class="card-title">Extra Sweetness</h2>
+          <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+          <div class="card-actions">
+            <button class="btn btn-primary">Buy Now</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 3 -->
+      <div class="card bg-base-100 shadow-sm">
+        <figure class="px-10 pt-10">
+          <img src="https://i.pinimg.com/736x/8b/7c/08/8b7c086fb5da5388e4a408c010686111.jpg" alt="Shoes"
+            class="rounded-xl" />
+        </figure>
+        <div class="card-body items-center text-center">
+          <h2 class="card-title">Colorful Appearance</h2>
+          <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+          <div class="card-actions">
+            <button class="btn btn-primary">Buy Now</button>
+          </div>
+        </div>
+      </div>
+
     </div>
-  </div>
-
-  <!--
-      SWAP THE TAKE FOR YOUR OWN BEFORE STAGE TWO. Every stage from here builds
-      on this page, and it is far easier to judge a design when the words are
-      ones you actually mean.
-    -->
-
-  <!--
-      STAGE TWO — the argument, in three cards.
-      Container, row, columns. Decide the whole first, then divide it. Three
-      reasons, side by side, each one a daisyUI card.
-
-      Build it here.
-    -->
-
-  <!--
-      STAGE THREE — make it survive a phone.
-      Three columns on a laptop is one unreadable column-and-a-bit on a phone.
-      Start from the phone case and add the wide case back with a breakpoint
-      prefix. Check 380, 768 and full width before you call it done.
-
-      This stage edits stage two rather than adding to it.
-    -->
-
-  <!--
-      STAGE FOUR — one media query, written by hand.
-      The prefixes are a convenience over ordinary CSS. Write one yourself once,
-      in styles.css, so the prefix stops being magic.
-    -->
-
-  <!--
-      FOOTER. Your name, and the credits.
-      Every image you add needs its creator, its source and its licence
-      recorded here. If you cannot write that line, you do not know whether you
-      are allowed to use the image.
-    -->
+  </div> <!-- END FEATURE BREAKOUT -->
 </body>
 
 </html>
