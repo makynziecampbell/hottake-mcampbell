@@ -1,4 +1,3 @@
-
 [data-theme='nord'] {
   --color-primary: #FFAFCA;
   --color-accent: #E17FF9;
@@ -6,23 +5,26 @@
   --color-yellow: #FAE416;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #caf0f8;
+}
+
 .hero {
   background-image: url("https://static.vecteezy.com/system/resources/thumbnails/038/942/428/small_2x/ai-generated-a-scoop-of-ice-cream-with-sprinkles-and-confetti-photo.jpeg");
+  background-size: cover;
+  background-position: center;
 }
 
 .hero h1 {
   text-shadow: 2px 2px 5px palevioletred;
-  font-size: 95px;
-  color: (white)
+  font-size: clamp(3rem, 7vw, 95px);
+  color: white;
 }
 
-body{
-  background-color:#caf0f8;
-}
-
-Footer {
-  background-color:#f2ebfb ;
-}
-.hero {
-  background-image:
+footer {
+  background-color: #f2ebfb;
 }
